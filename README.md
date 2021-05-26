@@ -1,1 +1,1 @@
-# BluetoothColorPicker
+# Bluetooth Color Picker
