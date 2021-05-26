@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connect_button_label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.70" />
+
+    <Button
+        android:id="@+id/disconnectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/disconnect_button_label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.80" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_dave_code_vs"
+        android:contentDescription="@string/image_desc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/disconnectButton"/>
+
+    <ImageView
+        android:id="@+id/colorPicker"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/color_picker"
+        android:contentDescription="@string/image_desc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <View
+        android:id="@+id/colorPreview"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/connectButton"
+        app:layout_constraintEnd_toEndOf="@+id/colorPicker"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/colorPicker"
+        app:layout_constraintTop_toBottomOf="@+id/colorPicker" />
+
+    <TextView
+        android:id="@+id/displayValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="HEX: \nRGB: "
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/colorPreview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/colorPreview"
+        app:layout_constraintTop_toTopOf="@+id/colorPreview"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
