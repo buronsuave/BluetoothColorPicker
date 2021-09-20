@@ -13,5 +13,6 @@ When starting the app for the first time, it will be requested to turn on the mo
 - an integer with the value of G (0, 255)
 - "B"
 - an integer with the value of B (0, 255)
+
 So 6 bytes must be received in each call. They are sent every time there is a click event on the RGB wheel or when it is dragged on it (a drag event).
 Check the implementation of the Arduino client part in the link: https://github.com/buronsuave/sistemas-embebidos-II/tree/main/producto-integrador for an example of reading data
